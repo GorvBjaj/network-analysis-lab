@@ -2,7 +2,7 @@
 
 
 
-##### Overview:
+## Overview:
 
 A Hands-on lab to learn how network packets behave when system is under attack because of network vulnerabilities.
 
@@ -10,7 +10,7 @@ Using Isolated Virtual Machines.
 
 
 
-##### Lab Environment:
+## Lab Environment:
 
 * Kali Linux (Attacker)
 * Ubuntu (Victim)
@@ -18,15 +18,15 @@ Using Isolated Virtual Machines.
 
 
 
-##### Attacks Covered:
+## Attacks Covered:
 
 * TCP SYN Flood
 * ARP Spoofing
 * Network Discovery (Nmap)
 
-##### 
 
-##### Major Steps Involved:
+
+## Major Steps Involved:
 
 * Create and Install Two different virtual machines (Kali Linux and Ubuntu)
 * Configure Them on isolated internal networks then Assign static IP's manually.
