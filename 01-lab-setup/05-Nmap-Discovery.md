@@ -30,7 +30,4 @@ ping 192.168.56.10
 - Successful ICMP replies confirmed connectivity.
 - Both machines could communicate only within the internal network.
 
-Screenshot: 
-
-## Evidence
-Screenshots and terminal outputs were captured for verification.
+Screenshot: https://github.com/GorvBjaj/network-analysis-lab/blob/baf6f671db0c20d8c3fbb6f7609d382cad7a6dea/screenshots/04-ICMP-test.png
