@@ -4,29 +4,33 @@ Also both machines should on simultaneously.
 ## Verification Steps
 
 ### 1. Check IP Address
-On both machines:
-ip -4 addr show
+- On both machines:
+- ip -4 addr show
 
-Ensure both IPs are in the same subnet.
+- Ensure both IPs are in the same subnet.
 
 ### 2. Nmap Discovery on Kali
+- On Kali Linux Terminal Use this Command:
 
-### 2. Ping Test
-From Kali Linux:
-ping 192.168.100.10
+Sudo nmap -sn 192.168.56.10/24\
+(Your ip with subnet)
 
-css
-Copy code
+Screenshot: https://github.com/GorvBjaj/network-analysis-lab/blob/a25ee79837fb4ce145c7018e638c9af03c4375e7/screenshots/03-nmap-discovery.png
 
-From Ubuntu:
-ping 192.168.100.20
+## Another method: PING
 
-markdown
-Copy code
+### 3. Ping Test
+- From Kali Linux:
+ping 192.168.56.20
 
-### 3. Result
+- From Ubuntu:
+ping 192.168.56.10
+
+### 4. Result
 - Successful ICMP replies confirmed connectivity.
 - Both machines could communicate only within the internal network.
+
+Screenshot: 
 
 ## Evidence
 Screenshots and terminal outputs were captured for verification.
