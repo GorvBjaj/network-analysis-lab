@@ -9,16 +9,18 @@ This section documents how static IP addresses were manually configured using nm
 
 ### 1. Configure Static IP (Kali Linux - Attacker)
 
-sudo nmcli con show
-sudo nmcli con mod "<connection-name>" ipv4.method manual ipv4.addresses 192.168.100.10/24
-sudo nmcli con up "<connection-name>"
+sudo nmcli con show\
+sudo nmcli con mod "connection-name" ipv4.method manual ipv4.addresses 192.168.100.10/24\
+sudo nmcli con up "connection-name"
 
 Screenshot:- https://github.com/GorvBjaj/network-analysis-lab/blob/a382e25c176f5435b3ab67d2150cf40767eb896a/screenshots/kali-linux-static-ip-assignment.png
 
 
 ### 2. Configure Static IP (Ubuntu - Victim)
 
-sudo nmcli con show
-sudo nmcli con mod "<connection-name>" ipv4.method manual ipv4.addresses 192.168.100.20/24
-sudo nmcli con up "<connection-name>"
+sudo nmcli con show\
+sudo nmcli con mod "connection-name" ipv4.method manual ipv4.addresses 192.168.100.20/24\
+sudo nmcli con up "connection-name"
+
+
 
