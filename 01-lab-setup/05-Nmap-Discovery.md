@@ -1,5 +1,5 @@
 # Connection Verification
-This section verifies that both virtual machines are connected to the same isolated network.
+This section verifies that both virtual machines are connected to the same isolated network.\
 Also both machines should on simultaneously.
 ## Verification Steps
 
