@@ -1,6 +1,6 @@
 # Connection Verification
 This section verifies that both virtual machines are connected to the same isolated network.\
-Also both machines should on simultaneously.
+Also both machines should be kept on simultaneously.
 ## Verification Steps
 
 ### 1. Check IP Address
