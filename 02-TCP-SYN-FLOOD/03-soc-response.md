@@ -1,7 +1,7 @@
 # SOC Analyst Response – TCP SYN Flood
 
 This section outlines the actions taken from a SOC L1 perspective upon detecting a TCP SYN flood.\
-After recieving an Alert for TCP-SYN-FLOODF attack these steps must be undertaken.
+After recieving an Alert for TCP-SYN-FLOOD attack these steps must be undertaken.
 
 ## 1. Validation
 - Reviewed PCAP data to confirm abnormal TCP SYN traffic.
