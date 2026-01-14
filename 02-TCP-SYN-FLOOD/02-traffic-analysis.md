@@ -19,12 +19,13 @@ This section analyzes the network traffic captured during the TCP SYN flood atta
 - Wireshark warnings such as retransmissions
 
 ## Screenshot for TCP SYN packets:
-- This is how TCP SYN Flood attack looks like in Wireshark.
+- This is how TCP SYN Flood attack looks like in Wireshark.\
 https://github.com/GorvBjaj/network-analysis-lab/blob/0cc9a2d11d1033ee630ef8f41cda129d440b5355/screenshots/06-TCP-SYN-packets.png
 
 
 ## Screenshot for TCP ACK packet 
-- Only sent by ubuntu(192.168.56.20) to kali linux but attacker doesnt send any ACK packets back to complete the connection
+- Only sent by ubuntu(192.168.56.20) to kali linux but attacker doesnt send any ACK packets back to complete the connection.\
+
 
 
 
