@@ -24,7 +24,7 @@ https://github.com/GorvBjaj/network-analysis-lab/blob/0cc9a2d11d1033ee630ef8f41c
 
 
 ## Screenshot for TCP ACK packet 
-- Only sent by ubuntu(192.168.56.20) to kali linux but attacker doesnt reply any ACK packets back to complete the connection.\
+- Only sent by ubuntu(192.168.56.20) to kali linux but attacker doesnt reply with any ACK packets to complete the connection.\
 https://github.com/GorvBjaj/network-analysis-lab/blob/779dc8916d9b37b2bf77a2ae6c337d1d2a053e5b/screenshots/07-TCP-ACK-packets-by-Ubuntu.png
 
 
