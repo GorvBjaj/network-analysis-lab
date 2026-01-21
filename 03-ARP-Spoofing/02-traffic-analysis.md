@@ -30,7 +30,7 @@ This section documents the ARP traffic observed during the spoofing activity and
 - Such claims rely on unauthenticated ARP announcements
 - This represents another ARP spoofing risk, separate from MITM attacks
 
-Screenshot: 
+Screenshot: https://github.com/GorvBjaj/network-analysis-lab/blob/c4aa73d216aa2e804bfcb7e709d0a82709f6d1e8/screenshots/09-ARP-Spoofing-packet-analysis.png
 
 ## Conclusion
 The observed ARP announcements, repeated poisoning attempts, and duplicate IP detections confirm ARP spoofing activity within the isolated lab.
