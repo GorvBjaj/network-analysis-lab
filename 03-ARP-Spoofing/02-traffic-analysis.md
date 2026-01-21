@@ -1,31 +1,36 @@
 # Traffic Analysis – ARP Spoofing
 
-This section analyzes the ARP traffic captured during the spoofing attempt.
+This section documents the ARP traffic observed during the spoofing activity and how it was detected.
 
 ## Capture Overview
-- Traffic was captured on the Ubuntu machine using Wireshark.
+- Traffic captured on Ubuntu using Wireshark
 - Display filter used: `arp`
 
-## Observed Indicators
-- High volume of ARP Reply packets sent repeatedly.
-- Unsolicited ARP replies (replies without matching requests).
-- Same IP addresses advertised with conflicting MAC addresses.
-- Wireshark warnings indicating “duplicate use of IP detected”.
+## Repeated Observations
+- Continuous ARP Reply packets at short intervals
+- Unsolicited ARP replies (no preceding ARP requests)
 
-## Key Evidence from Capture
-- Multiple ARP replies claiming ownership of the same IPs.
-- Frequent ARP announcements updating IP–MAC mappings.
-- Broadcast ARP traffic consistent with cache poisoning behavior.
+## ARP Announcements (Gratuitous ARP)
+- Frequent ARP announcements were observed meaning that particular ip device shouting thats me not him.
+- These packets repeatedly broadcast IP–MAC mappings
+- Used to overwrite or defend ARP cache entries
+
+## Detection Indicators
+- Wireshark warnings indicating “duplicate use of IP detected”
+- Multiple MAC addresses claiming the same IP
+- Abnormal volume of ARP replies compared to normal behavior
 
 ## Interpretation
-- Conflicting IP–MAC mappings confirm ARP cache poisoning activity.
-- Duplicate IP warnings indicate ARP inconsistency caused by spoofing.
-- The traffic pattern matches known ARP spoofing signatures.
+- The packet patterns confirm ARP cache poisoning behavior
+- Duplicate IP warnings indicate ARP inconsistency caused by spoofing
+- Repeated ARP traffic is required to keep the poisoning active due to ARP cache expiration
 
-## SOC Perspective
-- This behavior is a strong indicator of ARP spoofing or misconfiguration.
-- Alerts are expected due to duplicate IP detection and gratuitous ARP bursts.
-- The capture demonstrates successful generation and detection of malicious ARP behavior.
+## Related ARP Spoofing Scenario (Weak Networks)
+- In networks without DHCP Snooping or DAI, an attacker may claim an unused IP address
+- Such claims rely on unauthenticated ARP announcements
+- This represents another ARP spoofing risk, separate from MITM attacks
+
+Screenshot: 
 
 ## Conclusion
-The ARP traffic pattern and Wireshark warnings confirm an ARP spoofing attempt within the isolated lab environment.
+The observed ARP announcements, repeated poisoning attempts, and duplicate IP detections confirm ARP spoofing activity within the isolated lab.
