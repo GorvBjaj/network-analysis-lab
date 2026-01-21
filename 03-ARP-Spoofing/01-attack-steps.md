@@ -12,6 +12,7 @@ This section documents the steps used to simulate an ARP spoofing attack in the 
 ## Step-by-Step Execution
 
 ### 1. Enable IP Forwarding on Attacker
+// Here IP forwarding means every packet that ubuntu will share to kali(thinking of its the router) that will be forwarded to router.\
 `sudo sysctl -w net.ipv4.ip_forward=1`
 
 ### 2. Launch ARP Spoofing Attack
