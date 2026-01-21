@@ -22,8 +22,8 @@ This section documents the steps used to simulate an ARP spoofing attack in the 
 // Spoofing Gateway that i am Ubuntu.\
 `sudo arpspoof -i eth0 -t 192.168.56.1 192.168.56.20`
 
+> Run Both of these commands in two different terminals on Kali.\
 > Replace `eth0` with the correct network interface.
-\
 
 Screenshot: https://github.com/GorvBjaj/network-analysis-lab/blob/597ef9b997e2cb951461feb040d787848532a113/screenshots/08-ARP-Spoofing-Command%20.png
 
